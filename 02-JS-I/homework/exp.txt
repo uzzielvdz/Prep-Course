@@ -1,0 +1,23 @@
+##CONCEPTOS
+
+* Variables:
+
+Las variables son la forma en la que podemos almacenar datos o valores en nombre o cracteres especificos,
+sirven para poderlas usar en otras partes del codigo.
+
+*Strings:
+
+Son un tipo de dato que engloba cadenas de texto, no tienen valor númerico y deben ser 
+usadas entre comillas. 
+
+*Funciones (argumentos, `return`):
+
+Sonn una especie de subprocesos que nos permiten relaizar un proceso dentro de un scoop.
+
+*Declaraciones `if`:
+Son sentencias que no retornan ningun valor, pero si realizan algo.
+
+
+ *Valores booleanos (`true`, `false`):
+
+ No son valores numericos ni stgrings, sino que nos permiten saber si algo es true o false. Es todo
