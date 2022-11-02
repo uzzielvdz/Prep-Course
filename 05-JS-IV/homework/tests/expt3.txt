@@ -1,1 +1,0 @@
-arrays: los arrays o arreglos sirven para guardar o almacenar varios datos dentro de una variable.
