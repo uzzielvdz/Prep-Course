@@ -1,0 +1,1 @@
+arrays: los arrays o arreglos son variables donde almacenas mas de un dato
