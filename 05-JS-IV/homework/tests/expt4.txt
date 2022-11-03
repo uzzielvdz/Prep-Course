@@ -1,0 +1,13 @@
+Define los siguientes conceptos
+
+1. Objetos: Los objetos son variables donde podemos almacenar muchisima informacíon sobre una sola cosa
+como por ejemplo ewl historial de vida de una persona en muchisimos aspectos.
+
+2. Propiedades: Las propiedades son los pares de key-value dentro de un objeto, key es el identificador del dato y valor
+lo que queremos almacenado.
+
+3. Bucles for... in: los Bucles for... in son una especie de bucle for que cambia un poco, antes de in va una variable que d-
+clararemos por primera vez y despues el nombre del objeto.
+
+4. Notación de puntos vs notación de corchetes:  Entre corchetes es llamada Bracket notation y de puntos dot notaton,
+tecnicamente da el mismo resultado.
