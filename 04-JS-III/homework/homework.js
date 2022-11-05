@@ -30,6 +30,7 @@ function incrementarPorUno(array) {
   for ( var i= 0; i < array.length; i++)  {
     NuevoArray[i] = array[i] + 1;
   }
+  return NuevoArray;
 }
 
 
@@ -80,8 +81,8 @@ function agregarNumeros(numeros) {
   // Suma todos los enteros y devuelve el valor
   // Tu código:
   var suma = 0;
-  for (var i = 0; i < array.length; i++) {
-    suma=suma + numeros[i];
+  for (var i = 0; i < numeros.length; i++) {
+    suma = suma + numeros[i];
   }
   return suma;
 }
@@ -92,11 +93,12 @@ function promedioResultadosTest(resultadosTest) {
   // Itera (en un bucle) los elementos del array, calcula y devuelve el promedio de puntajes
   // Tu código:
   
-  for (var i = 0; i < array.length; i++) {
-    ;
-    agregarNum[i] = array[i];
+  for (let i = 0; i < resultadosTest.length; i++) {
+    agregarnum = agregarNum + array[i];
+    
   }
-  return agregarNum[resultadosTest]/resultadosTest.length
+  var prom = agregarNum[resultadosTest]/resultadosTest.length;
+  return prom;
 }
 
 
@@ -118,12 +120,13 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
+
   if (arguments.length < 1) {
     return 0;
   }
   var total = 1;
   for (var i = 0; i < arguments.length; i++) {
-    total = total + arguments[i]; 
+    total = total * arguments[i]; 
   }
   return total;
 }
@@ -133,9 +136,9 @@ function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
 var contador = 0;
-for (var i = 0; i < array.length; i++) {
+for (var i = 0; i < arreglo.length; i++) {
   if (arreglo[i] > 19){
-    contador ++
+    contador ++;
   }
 }
 return contador;
@@ -151,7 +154,7 @@ function diaDeLaSemana(numeroDeDia) {
     return "Es fin de semana";
   }
   else {
-    return "Es día laboral";
+    return "Es dia Laboral";
   }
 } 
 
@@ -160,14 +163,11 @@ function empiezaConNueve(n) {
   //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
-  for (var i = 0; i < array.length; i++) {
-    if (n(0) === "9") {
-      return true;
-    }
-    else {
-      return false;
-    }
-  }
+num = n.toString();
+if (n.charAt() === "9") {
+  return true;
+} 
+return false;
 }
 
 
@@ -175,7 +175,7 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  }
-  for (var i = 0; i < array.length; i++) {
+  for (var i = 0; i < arreglo.length; i++) {
     if (arreglo[i] !== arreglo[i+1]) {
       return false;
     } 
@@ -195,7 +195,7 @@ function mesesDelAño(array) {
   var NuevoArray = [];
   for (var i = 0; i < array.length; i++) {
     if (array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre") {
-      return NuevoArray.push(array[i])
+      return NuevoArray.push(array[i]);
     };
   }
   if (NuevoArray.length < 3) {
@@ -232,14 +232,14 @@ function breakStatement(numero) {
   var array = [];
   var suma = numero;
   for (var i=0; i<10; i++) {
-    suma = suma +2
-    if (suma= i) break;
+    suma = suma +2;
+    if (suma === i) break;
     else {
       array.push(suma);
     }
   }
   if (i < 10 ) {
-    return "Se interrumpio la ejecución";
+    return "Se interrumpió la ejecución";
   }
   else{
     return array;
