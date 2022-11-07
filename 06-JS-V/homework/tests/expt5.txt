@@ -1,0 +1,2 @@
+prototype: Son los predecesores de un objeto antes
+Constructors: Los constructores son la plantilla que se llenara con los nuevos objetos.
